@@ -1,0 +1,9 @@
+---
+- name: create the empty file in nodes home directory
+  hosts: all
+  become: true
+  tasks:
+    - name: create an empty file using touch
+      file:
+        path: /home/ansadmin/demofile.txt
+        state: touch

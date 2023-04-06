@@ -1,0 +1,9 @@
+---
+- name: Create a directory for playbook
+  hosts: all
+  become: true
+  tasks:
+    - name: Create an empty directory
+      file:
+        path: /home/ansadmin/dir1/dir2
+        state: directory

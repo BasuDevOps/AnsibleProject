@@ -1,0 +1,9 @@
+---
+- name: Copy file from local to remote
+  hosts: webservers
+  become: true
+  tasks:
+    - name: Copy file
+      copy:
+        src: /home/ansadmin/xyz.txt
+        dest: /home/ansadmin

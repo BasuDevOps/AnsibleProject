@@ -1,0 +1,9 @@
+---
+- name: Copy file from /home/ansadmin/xyz.txt to /home/ansadmin/ of all node
+  hosts: all
+  become: true
+  tasks:
+    - name: copy file from server to all nodes
+      copy:
+        src: /home/ansadmin/abc.txt
+        dest: /home/ansadmin/

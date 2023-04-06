@@ -1,0 +1,9 @@
+---
+- name: Install tree package on all nodes of webservers group
+  hosts: webservers
+  become: true
+  tasks:
+    - name: install tree package
+      yum:
+        name: tree
+        state: present

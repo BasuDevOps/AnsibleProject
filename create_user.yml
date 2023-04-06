@@ -1,0 +1,7 @@
+---
+- name: User creation page
+  hosts: webservers[0:1]
+  become: true
+  tasks:
+   - user:
+       name=raj
