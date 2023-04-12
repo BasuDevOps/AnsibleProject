@@ -1,0 +1,9 @@
+---
+- name: Remove httpd package
+  hosts: webservers
+  become: true
+  tasks:
+    - name: uninstall httpd
+      yum:
+        name: httpd
+        state: absent

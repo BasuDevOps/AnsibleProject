@@ -7,9 +7,8 @@
     service:
       name: httpd
       state: stopped
-      enabled: false
 
   - name: Uninstall httpd package
     yum:
-      name: httpd
+      name: httpd*
       state: absent

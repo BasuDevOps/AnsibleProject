@@ -1,0 +1,11 @@
+---
+- name: create multiple users to all nodes
+  hosts: webservers
+  become: true
+  tasks:
+    - name: create  multiple users
+      user: name='{{item}}' state=present
+      loop:
+        - Ram
+        - Lakshman
+        - Bharat

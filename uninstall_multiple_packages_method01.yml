@@ -1,0 +1,11 @@
+---
+- name: uninstall multiple packages to all nodes
+  hosts: webservers
+  become: true
+  tasks:
+    - name: uninstall multiple packages
+      yum: name='{{item}}' state=removed
+      with_items:
+        - git*
+        - tree*
+        - java*

@@ -1,0 +1,9 @@
+---
+- name: uninstall htttpd package
+  hosts: webservers
+  become: true
+  tasks:
+    - name: uninstall httpd package
+      yum:
+        name: httpd*
+        state: removed

@@ -1,0 +1,9 @@
+---
+- name: install multiple packages to all nodes
+  hosts: webservers
+  become: true
+  tasks:
+    - name: install multiple packages
+      yum:
+        name: ['git','tree','java']
+        state: installed

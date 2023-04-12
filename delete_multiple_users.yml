@@ -1,0 +1,11 @@
+---
+- name: delete multiple users from all nodes
+  hosts: webservers
+  become: true
+  tasks:
+    - name: deleting  multiple users
+      user: name='{{item}}' state=absent
+      with_items:
+        - Ram
+        - Lakshman
+        - Bharat
