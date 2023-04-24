@@ -1,0 +1,11 @@
+---
+- name: my target playbook for user create using Variables
+  hosts: webservers
+  become: true
+  vars:
+    user: Bunny
+  tasks:
+  - name: Creating user "{{user}}"
+    user:
+      name: "{{user}}" 
+

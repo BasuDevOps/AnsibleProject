@@ -1,0 +1,6 @@
+---
+- name: install webserver and start services
+  hosts: webservers
+  become: true
+  roles:
+  - setup-apache-role

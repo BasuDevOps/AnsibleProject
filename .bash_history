@@ -349,3 +349,144 @@ git push origin main:main
 sudo git push origin main:main
 git log --oneline
 git show 44d20b6
+
+vi uninstall_httpd_service_stop.yaml 
+ansible-playbook uninstall_httpd_service_stop.yaml 
+vi uninstall_httpd_service_stop.yaml 
+ansible-playbook uninstall_httpd_service_stop.yaml 
+ansible-playbook install_httpd_service_start.yaml 
+ansible-playbook uninstall_httpd_service_stop.yaml 
+ansible webservers -b -m command -a "which httpd"
+ansible webservers -b -m command -a "httpd -v"
+ansible webservers -b -m command -a "service httpd status"
+ls
+vi uninstall_httpd.yaml 
+pwd
+mkdir playbooks
+cd playbooks/
+ls
+touch > index.html
+cat > index.html
+ls
+pwd
+cd
+ls
+cp install_webserver_redhat_debian_os.yaml install_webserver_redhat_debian_os_complete.yaml
+vi install_webserver_redhat_debian_os_complete.yaml 
+ansible-playbook install_webserver_redhat_debian_os_complete.yaml --check
+vi install_webserver_redhat_debian_os_complete.yaml
+ansible-playbook install_webserver_redhat_debian_os_complete.yaml --check
+vi install_webserver_redhat_debian_os_complete.yaml
+cd playbooks/
+ls
+pwd
+cd
+vi install_webserver_redhat_debian_os_complete.yaml
+ansible-playbook install_webserver_redhat_debian_os_complete.yaml --check
+ls
+rm install_webserver_redhat_debian_os.yaml
+ls
+cp install_webserver_redhat_debian_os_complete.yaml install_webserver_redhat_debian_os.yaml
+vi install_webserver_redhat_debian_os.yaml 
+ansible-playbook install_webserver_redhat_debian_os.yaml --check
+ansible-playbook install_webserver_redhat_debian_os_complete.yaml
+vi install_webserver_redhat_debian_os_complete.yaml 
+ansible-playbook install_webserver_redhat_debian_os_complete.yaml
+vi install_webserver_redhat_debian_os.yaml 
+ansible webservers -b -m command -a "httpd -v"
+ansible webservers -b -m command -a "service httpd status"
+vi install_multiple_packages.yml
+ansible-playbook install_multiple_packages.yml --check
+ansible-playbook install_multiple_packages.yml 
+ansible webservers -b -m command -a "git -v"
+ansible webservers -b -m command -a "tree -v"
+ansible webservers -b -m command -a "tree --version
+ansible webservers -b -m command -a "tree --version"
+ansible webservers -b -m command -a "java -v"
+ansible webservers -b -m command -a "java --version"
+ansible webservers -b -m command -a "which tree"
+ls
+mv install_multiple_packages_method01.yml 
+mv install_multiple_packages.yml install_multiple_packages_method01.yml 
+cp install_multiple_packages_method01.yml uninstall_multiple_packages_method01.yml
+vi uninstall_multiple_packages_method01.yml 
+ansible-playbook uninstall_multiple_packages_method01.yml 
+ansible webservers -b -m command -a "which tree"
+ansible webservers -b -m command -a "which git"
+ansible webservers -b -m command -a "which java"
+vi uninstall_multiple_packages_method01.yml 
+ansible-playbook uninstall_multiple_packages_method01.yml 
+ansible webservers -b -m command -a "which java"
+cp install_multiple_packages_method01.yml install_multiple_packages_method02.yml 
+vi install_multiple_packages_method02.yml 
+rm install_multiple_packages_method02.yml
+cp uninstall_multiple_packages_method01.yml install_multiple_packages_method02.yml 
+vi install_multiple_packages_method02.yml 
+ansible-playbook install_multiple_packages_method02.yml 
+ansible webservers -b -m command -a "which java"
+cp install_multiple_packages_method02.yml create_multiple_users.yml 
+vi create_multiple_users.yml
+vi install_multiple_packages_method02.yml 
+ansible-playbook create_multiple_users.yml --check
+ansible-playbook create_multiple_users.yml
+vi create_multiple_users.yml 
+cp create_multiple_users.yml delete_multiple_users.yml 
+vi delete_multiple_users.yml 
+vi create_multiple_users.yml 
+ansible webservers -b -m command -a "tail -5 /etc/passwd"
+ansible-playbook  delete_multiple_users.yml 
+ansible webservers -b -m command -a "tail -5 /etc/passwd"
+cp create_multiple_users.yml uu.yml
+vi uu.yml 
+ansible-playbook uu.yml --check
+ansible-playbook uu.yml
+ansible webservers -b -m command -a "tail -5 /etc/passwd"
+ansible-playbook delete_multiple_users.yml 
+ansible webservers -b -m command -a "tail -5 /etc/passwd"
+ls
+mv uu.yml create_multiple_users_method02.yml
+git status
+git add .
+git status
+git commit -m "11thApril ansible"
+sudo git commit -m "11thApril ansible"
+git log --oneline
+git show a7f48d9
+git push origin main:main
+sudo git push origin main:main
+ls
+ls -la
+git add .
+git status
+ca playbooks/
+ls
+cd playbooks/
+ls
+cd
+cd roles/
+ls
+cat setup-apache-role/
+cat setup-apache-basu.yml
+cd
+tar -zcvf roles.tar.gz roles/
+ls
+git add .
+git status
+git commit -m "latest commit with Ansible Roles"
+git log --oneline
+git push origin main:main
+sudo git push origin main:main
+git origin --version
+git remote --version
+git remote -v
+sudo git push origin main:main
+git status
+git log --oneline
+git show a7f48d9
+ls
+git add .
+git status
+git commit -m "latest commit 24th april"
+ls -la
+cd
+exit
